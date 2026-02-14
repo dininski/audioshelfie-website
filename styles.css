@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .hero-glow::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(124, 92, 252, 0.25) 0%, transparent 70%);
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .cta-glow::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(124, 92, 252, 0.25) 0%, transparent 70%);
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #a78bfa, #c084fc, #f0abfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .phone-shadow {
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(124, 92, 252, 0.25);
+  }
+
+  .book-1 { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+  .book-2 { background: linear-gradient(135deg, #0ea5e9, #6366f1); }
+  .book-3 { background: linear-gradient(135deg, #8b5cf6, #d946ef); }
+  .book-4 { background: linear-gradient(135deg, #14b8a6, #0ea5e9); }
+  .book-5 { background: linear-gradient(135deg, #f43f5e, #f97316); }
+  .book-6 { background: linear-gradient(135deg, #a855f7, #6366f1); }
+
+  .player-thumb-gradient {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  }
+
+  .btn-glow {
+    box-shadow: 0 0 24px rgba(124, 92, 252, 0.25);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 32px rgba(124, 92, 252, 0.25);
+  }
+}

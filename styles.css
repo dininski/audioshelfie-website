@@ -15,7 +15,7 @@
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(124, 92, 252, 0.25) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 195, 0, 0.2) 0%, transparent 70%);
     top: -100px;
     left: 50%;
     transform: translateX(-50%);
@@ -27,7 +27,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(124, 92, 252, 0.25) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 195, 0, 0.2) 0%, transparent 70%);
     bottom: -200px;
     left: 50%;
     transform: translateX(-50%);
@@ -35,13 +35,13 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #a78bfa, #c084fc, #f0abfc);
+    background: linear-gradient(135deg, #ffc300, #ffd60a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .phone-shadow {
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(124, 92, 252, 0.25);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(255, 195, 0, 0.2);
   }
 
   .book-1 { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
@@ -56,9 +56,9 @@
   }
 
   .btn-glow {
-    box-shadow: 0 0 24px rgba(124, 92, 252, 0.25);
+    box-shadow: 0 0 24px rgba(255, 195, 0, 0.35);
   }
   .btn-glow:hover {
-    box-shadow: 0 0 32px rgba(124, 92, 252, 0.25);
+    box-shadow: 0 0 32px rgba(255, 195, 0, 0.5);
   }
 }
